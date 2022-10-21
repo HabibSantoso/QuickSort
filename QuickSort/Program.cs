@@ -31,9 +31,18 @@ namespace QuickSort
                 {
                     Console.Write("<" + (i + 1) + "> ");
                     string s1 = Console.ReadLine();
-                    a[i] = Int32.Parse(s1);
+                    arr[i] = Int32.Parse(s1);
                 }
             }
+        }
+
+        void swap(int x, int y)
+        {
+            int temp;
+
+            temp = arr[x];
+            arr[x] = arr[y];
+            arr[y] = temp;
         }
         static void Main(string[] args)
         {
