@@ -69,7 +69,7 @@ namespace QuickSort
                     j--;
                     cmp_count++;
                 }
-                cmp_count++
+                cmp_count++;
 
                 if (i < j)
                 {
@@ -89,6 +89,21 @@ namespace QuickSort
             q_sort(j + 1, high);
         }
 
+        public void display()
+        {
+            Console.WriteLine("");
+            Console.WriteLine("----------------------------");
+            Console.WriteLine("Element array yang telah terseusun");
+            Console.WriteLine("----------------------------");
+
+            for (int j = 0; j < n; j++)
+            {
+                Console.WriteLine(arr[j]);
+            }
+            Console.WriteLine("");
+            Console.WriteLine("\nNumber of comparisons: " + cmp_count);
+            Console.WriteLine("\nNumber of data movments: " + mov_count);
+        }
 
         static void Main(string[] args)
         {
