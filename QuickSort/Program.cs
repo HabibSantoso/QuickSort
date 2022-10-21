@@ -105,9 +105,20 @@ namespace QuickSort
             Console.WriteLine("\nNumber of data movments: " + mov_count);
         }
 
+        int getsize()
+        {
+            return (n);
+        }
+
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Program myList = new Program();
+            myList.input();
+            myList.q_sort(0, myList.getsize() - 1);
+            myList.display();
+
+            Console.WriteLine("\n\nPres Enter to Exit");
+            Console.Read();
         }
     }
 }
